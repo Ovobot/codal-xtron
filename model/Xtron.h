@@ -75,14 +75,14 @@ namespace codal
             ZSPI                        spi;
             //codal::_mbed::I2C           i2c;
 
-            Synthesizer synth0;
-            Synthesizer synth1;
-            Mixer mixer;
-            ZPWM pwm;
+            // Synthesizer synth0;
+            // Synthesizer synth1;
+            // Mixer mixer;
+            // ZPWM pwm;
 
-            ZSingleWireSerial sws;
-            JDPhysicalLayer bus;
-            JACDAC jacdac;
+            // ZSingleWireSerial sws;
+            // JDPhysicalLayer bus;
+            // JACDAC jacdac;
         // JackRouter jackRouter;
 
             Button buttonUp;
@@ -90,7 +90,7 @@ namespace codal
             Button buttonLeft;
             Button buttonRight;
 
-            ZSingleWireSerial serialOut;
+            //ZSingleWireSerial serialOut;
 
             /**
              * Constructor.

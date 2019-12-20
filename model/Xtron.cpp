@@ -43,17 +43,17 @@ Xtron::Xtron() :
     messageBus(),
     io(),
     spi(io.mosi, io.miso, io.sck),
-    synth0(SYNTHESIZER_SAMPLE_RATE, true),
-    synth1(SYNTHESIZER_SAMPLE_RATE, true),
-    pwm(io.snd, mixer),
-    sws(io.tx),
-    bus(sws, tim2, &io.ledRed),
-    jacdac(bus),
+    // synth0(SYNTHESIZER_SAMPLE_RATE, true),
+    // synth1(SYNTHESIZER_SAMPLE_RATE, true),
+    // pwm(io.snd, mixer),
+    // sws(io.tx),
+    // bus(sws, tim2, &io.ledRed),
+    // jacdac(bus),
     buttonUp(io.buttonUp, DEVICE_ID_BUTTON_UP, DEVICE_BUTTON_ALL_EVENTS, ACTIVE_LOW, PullMode::Up),
     buttonDown(io.buttonDown, DEVICE_ID_BUTTON_DOWN, DEVICE_BUTTON_ALL_EVENTS, ACTIVE_LOW, PullMode::Up),
     buttonLeft(io.buttonLeft, DEVICE_ID_BUTTON_LEFT, DEVICE_BUTTON_ALL_EVENTS, ACTIVE_LOW, PullMode::Up),
-    buttonRight(io.buttonRight, DEVICE_ID_BUTTON_RIGHT, DEVICE_BUTTON_ALL_EVENTS, ACTIVE_LOW, PullMode::Up),
-    serialOut(io.d1)
+    buttonRight(io.buttonRight, DEVICE_ID_BUTTON_RIGHT, DEVICE_BUTTON_ALL_EVENTS, ACTIVE_LOW, PullMode::Up)
+    // serialOut(io.d1)
 {
     // Clear our status
     status = 0;
@@ -100,14 +100,14 @@ int Xtron::init()
     codal_dmesg_set_flush_fn(xtron_dmesg_flush);
     status |= DEVICE_COMPONENT_STATUS_IDLE_TICK;
 
-    synth0.setSampleRate(pwm.getSampleRate());
-    synth0.setTone(Synthesizer::SineTone);
+    // synth0.setSampleRate(pwm.getSampleRate());
+    // synth0.setTone(Synthesizer::SineTone);
 
-    synth1.setSampleRate(pwm.getSampleRate());
-    synth1.setTone(Synthesizer::SineTone);
+    // synth1.setSampleRate(pwm.getSampleRate());
+    // synth1.setTone(Synthesizer::SineTone);
 
-    mixer.addChannel(synth0.output);
-    mixer.addChannel(synth1.output);
+    // mixer.addChannel(synth0.output);
+    // mixer.addChannel(synth1.output);
 
     //synth.setVolume(400);
     //synth.setFrequency(400);
