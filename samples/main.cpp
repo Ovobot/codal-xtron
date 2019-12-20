@@ -1,16 +1,16 @@
-#include "BrainPad.h"
+#include "Xtron.h"
 
-BrainPad bp;
+Xtron xn;
 
 int main()
 {
-    bp.init();
+    xn.init();
 
     int state = 0;
 
     while(1)
     {
-        bp.io.ledRed.setDigitalValue(state);
+        xn.io.ledRed.setDigitalValue(state);
         fiber_sleep(1000);
         state = !state;
     }

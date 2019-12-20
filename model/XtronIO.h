@@ -22,8 +22,8 @@ FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 */
 
-#ifndef BIG_BRAINPAD_IO_H
-#define BIG_BRAINPAD_IO_H
+#ifndef XTRON_IO_H
+#define XTRON_IO_H
 
 #include "CodalConfig.h"
 #include "ZPin.h"
@@ -79,7 +79,7 @@ namespace codal
     /**
      * Represents a collection of all I/O pins exposed by the device.
      */
-    class BrainPadIO
+    class XtronIO
     {
         public:
 
@@ -126,7 +126,7 @@ namespace codal
             /**
              * Constructor.
              */
-            BrainPadIO();
+            XtronIO();
     };
 }
 
