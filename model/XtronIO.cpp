@@ -66,7 +66,7 @@ XtronIO::XtronIO() :
     cs(ID_PIN_P0 + 13, PB_12, PIN_CAPABILITY_AD),
     dc(ID_PIN_P0 + 14, PB_4, PIN_CAPABILITY_AD),
     displayReset(ID_PIN_P0 + 15, PC_12, PIN_CAPABILITY_AD),
-    displayBl(ID_PIN_P0 + 16, PB_9, PIN_CAPABILITY_AD),
+    displayBl(ID_PIN_P0 + 16, PB_9, PIN_CAPABILITY_AD)
     // d1(ID_PIN_P0 + 17, PA_2, PIN_CAPABILITY_AD),
     // d2(ID_PIN_P0 + 18, PA_3, PIN_CAPABILITY_AD),
     // d3(ID_PIN_P0 + 19, PB_3, PIN_CAPABILITY_AD),

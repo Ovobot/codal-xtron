@@ -71,7 +71,7 @@ namespace codal
             STMLowLevelTimer            tim5;
             Timer                       timer;
             MessageBus                  messageBus;
-            XtronIO                  io;
+            XtronIO                     io;
             ZSPI                        spi;
             //codal::_mbed::I2C           i2c;
 

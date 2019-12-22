@@ -12,3 +12,29 @@
 #define USB_DEFAULT_PID 0x5799 // similar to examples
 #define USB_EP_FLAG_NO_AUTO_ZLP 0x01
 #define DEVICE_USB_ENDPOINTS 6
+
+#define SETTINGS_MAGIC_0 0x10476643
+#define SETTINGS_MAGIC_1 0x2e9a5026
+
+// struct F4_Settings {
+//     uint32_t magic0;
+//     uint32_t magic1;
+//     int *configValues;
+//     uint32_t hseValue;
+//     const char *info_uf2;
+//     const char *manufacturer;
+//     const char *device;
+//     uint32_t reserved[16 - 7];
+// };
+
+// #define UF2_BINFO ((F4_Settings *)(BOOTLOADER_END - sizeof(F4_Settings)))
+// #define UF2_INFO_TXT UF2_BINFO->info_uf2
+// #define USB_HANDOVER 0
+
+#define BOOT_RTC_SIGNATURE 0x71a21877
+#define APP_RTC_SIGNATURE 0x24a22d12
+#define HF2_RTC_SIGNATURE 0x39a63a78
+#define QUICK_BOOT(v)                                                                              \
+    do {                                                                                           \
+        RTC->BKP0R = v ? APP_RTC_SIGNATURE : HF2_RTC_SIGNATURE;                                    \
+    } while (0)

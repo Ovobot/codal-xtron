@@ -89,21 +89,21 @@ namespace codal
             ZPin        buttonDown;
             ZPin        buttonLeft;
             ZPin        buttonRight;
-            ZPin        ledGreen;
+            // ZPin        ledGreen;
             ZPin        ledBlue;
             ZPin        ledRed;
             ZPin        buzzer;
             ZPin        interrupt;
-            ZPin        servoOne;
-            ZPin        servoTwo;
+            // ZPin        servoOne;
+            // ZPin        servoTwo;
 
-            ZPin        snd;
-            ZPin        hpEn;
-            ZPin        bzEn;
-            ZPin        tx;
-            ZPin        pwrEn;
-            ZPin        tip;
-            ZPin        sense;
+            // ZPin        snd;
+            // ZPin        hpEn;
+            // ZPin        bzEn;
+            // ZPin        tx;
+            // ZPin        pwrEn;
+            // ZPin        tip;
+            // ZPin        sense;
 
             ZPin        mosi;
             ZPin        miso;
@@ -115,13 +115,13 @@ namespace codal
             ZPin        displayBl;
 
             // Headers
-            ZPin        d1;
-            ZPin        d2;
-            ZPin        d3;
-            ZPin        d4;
-            ZPin        d5;
-            ZPin        d6;
-            ZPin        d7;
+            // ZPin        d1;
+            // ZPin        d2;
+            // ZPin        d3;
+            // ZPin        d4;
+            // ZPin        d5;
+            // ZPin        d6;
+            // ZPin        d7;
 
             /**
              * Constructor.
