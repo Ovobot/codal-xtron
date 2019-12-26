@@ -114,6 +114,8 @@ namespace codal
             ZPin        displayReset;
             ZPin        displayBl;
 
+            ZPin        flashCS;
+
             // Headers
             // ZPin        d1;
             // ZPin        d2;

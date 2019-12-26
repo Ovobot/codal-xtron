@@ -59,6 +59,8 @@ Xtron::Xtron() :
     status = 0;
 
     io.buzzer.getDigitalValue();
+    io.cs.setDigitalValue(1);
+    io.displayReset.setDigitalValue(1);
 
     device_instance = this;
 }

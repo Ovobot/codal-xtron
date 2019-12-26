@@ -60,13 +60,14 @@ XtronIO::XtronIO() :
     // pwrEn (ID_PIN_P6, PB_5, PIN_CAPABILITY_AD), // brown - MOSI
     // tip (ID_PIN_P7, PB_4, PIN_CAPABILITY_AD), // orange - not used/MISO
     // sense (ID_PIN_P0, PB_3, PIN_CAPABILITY_AD), // yellow - CLK
-    mosi(ID_PIN_P0 + 10, PA_7, PIN_CAPABILITY_AD),
+    mosi(ID_PIN_P0 + 7, PA_7, PIN_CAPABILITY_AD),
     miso(ID_PIN_P0 + 11, PA_6, PIN_CAPABILITY_AD),
     sck(ID_PIN_P0 + 12, PA_5, PIN_CAPABILITY_AD),
     cs(ID_PIN_P0 + 13, PB_12, PIN_CAPABILITY_AD),
     dc(ID_PIN_P0 + 14, PB_4, PIN_CAPABILITY_AD),
-    displayReset(ID_PIN_P0 + 15, PC_12, PIN_CAPABILITY_AD),
-    displayBl(ID_PIN_P0 + 16, PB_9, PIN_CAPABILITY_AD)
+    displayReset(ID_PIN_P0 + 18, PC_12, PIN_CAPABILITY_AD),
+    displayBl(ID_PIN_P0 + 19, PB_9, PIN_CAPABILITY_AD),
+    flashCS(ID_PIN_P0 + 20, PB_2, PIN_CAPABILITY_AD)
     // d1(ID_PIN_P0 + 17, PA_2, PIN_CAPABILITY_AD),
     // d2(ID_PIN_P0 + 18, PA_3, PIN_CAPABILITY_AD),
     // d3(ID_PIN_P0 + 19, PB_3, PIN_CAPABILITY_AD),
